@@ -14,6 +14,6 @@ str1.isPalindrom(); // true
 str2.isPalindrom(); // true
 str3.isPalindrom(); // false
 
-console.log(`Second task - ${str1.isPalindrom()}`);
-console.log(`Second task - ${str2.isPalindrom()}`);
-console.log(`Second task - ${str3.isPalindrom()}`);
+console.log(str1.isPalindrom());
+console.log(str2.isPalindrom());
+console.log(str3.isPalindrom());

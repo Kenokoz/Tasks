@@ -10,7 +10,7 @@ function add() {
 
 function dec() {
   if (this.a === 0)
-  return num = this.a - 1;
+    return num = this.a - 1;
   else
     return num -= 1;
 }

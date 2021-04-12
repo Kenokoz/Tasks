@@ -7,7 +7,7 @@ function sum(firstNum = 0) {
     return add;
   }
 
-  add.toString = () => result // Переопределяем метод toString
+  add.toString = () => result;
 
   return add;
 }

@@ -7,4 +7,4 @@ function sum() {
 Array.prototype.sum = sum;
 
 arr.sum(); // 5
-console.log(`First task - ${arr.sum()}`);
+console.log(arr.sum());
