@@ -21,12 +21,12 @@ func1()                   // - промис с результатом - 1
 // 7.2:
 func1()                   // - промис с результатом - 1
   .then(function() {   
-    func2();              // -- func2(undefined)
+    func2();              // -- func2(undefined), происходит вызов функции без возвращения промиса
   })
   .then(func3)            // -- func3(undefined)
 // 7.3:
 func1()                   // - промис с результатом - 1
-  .then(func2())          // - func2(undefined)
+  .then(func2())          // - func2(undefined), передаем в then отличное от функции, это интерпретируется как then(null)
   .then(func3)            // -- func3(1)
 // 7.4:
 func1()                   // - промис с результатом - 1
