@@ -1,18 +1,10 @@
 //Fourth task
-let num = 0;
-
 function add() {
-  if (this.a === 0)
-    return num = this.a + 1;
-  else
-    return num += 1;
+  return this.a === 0 || this.a ? ++this.a : this + 1;
 }
 
 function dec() {
-  if (this.a === 0)
-    return num = this.a - 1;
-  else
-    return num -= 1;
+  return this.a === 0 || this.a ? --this.a : this - 1
 }
 
 
@@ -26,6 +18,6 @@ const obj = {
 	a: 0
 };
 
-obj.add().add().dec().add(); // 2
+// obj.add().add().dec().add(); // 2
 
-console.log(obj.add().add().dec().add());
+console.log(obj.add().add().dec().add()); // 2
