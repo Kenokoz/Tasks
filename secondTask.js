@@ -1,9 +1,8 @@
 //Second task
 function isPalindrom() {
-  const str = this.toLowerCase().split(' ').join('').split('');
-  return str.join('') === str.reverse().join('');
+  const str = this.toLowerCase().replace(/ /g, '');
+  return str === str.split('').reverse().join('');
 }
-
 String.prototype.isPalindrom = isPalindrom;
 
 const str1 = 'Иди';
