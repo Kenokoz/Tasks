@@ -10,16 +10,17 @@ function dec() {
 }
 
 function showResult() {
-  console.log(obj.a);
+  console.log(this.a);
+  return this;
 }
-
-Object.prototype.add = add;
-Object.prototype.dec = dec;
 
 const obj = {
 	a: 0
 };
 
-obj.add().add().dec().add(); // 2
+obj.add = add;
+obj.dec = dec;
+obj.showResult = showResult;
 
-showResult();
+obj.add().add().dec().add().showResult(); // 2
+
